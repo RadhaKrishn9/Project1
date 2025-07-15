@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Location App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'>
+    <script src='main.js'></script>
+    <script src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>LOCATION APP</h1>
+    </header>
+    <!-- Search Box -->
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Search...." />
+        <button onclick="searchPlaces()" id="searchBtn">Search</button>
+    </div>
+    <div id="map"></div>
+    <!-- Location Results -->
+    <div class="card-list" id="results">
+        <!-- Dynamic location card will be shown here -->
+    </div>
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <div>Home</div>
+        <div>Map</div>
+        <div>Favourites</div>
+        <div>Profiles</div>
+    </nav>
+    <script>
+        function searchPlaces() {
+            const query =
+                document.getElementById('search').value;
+            console.log('Searching:', query);
+            //Placeholder for search functionality
+        }
+    </script>
+
+</body>
+
+</html>
